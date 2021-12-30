@@ -1,2 +1,6 @@
 # DLL-Solutions
-Criação de um Website com base em um Template gratis fazendo modificações para que ele fique original
+Repositorio onde alocaremos todos os projetos referentes a DLL-Solutions
+
+Responsaveis pelo repositorio: 
+-Guilherme Linguester;
+-Guilherme Ferraz;
