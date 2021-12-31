@@ -9,6 +9,8 @@ body {
 }
 
 
+
+
 .Time{
 
 	display: flex;
@@ -334,23 +336,6 @@ section {
 	background-image: url('../img/table-1.jpg');
 }
 
-.intro-table-hover {
-	-webkit-transition: background-image 0.3s ease, background-position 0.3s;
-	transition: background-image 0.3s ease, background-position 0.3s;
-	background-image: url('../img/table-2.jpg');
-}
-
-.intro-table-hover h4 {
-	-webkit-transform: translateY(170px);
-	transform: translateY(170px);
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-}
-
-.intro-table-hover:hover {
-	background-image: url('../img/table-2-hover.jpg');
-	background-position: 50% 50%;
-}
 
 .intro-table-third {
 	background-image: url('../img/table-3.jpg');
@@ -560,6 +545,22 @@ section {
 	transition: opacity 0.45s ease;
 }
 
+.formulario{
+
+	position: relative;
+	left:300px;
+	top: -100px;	
+
+}
+
+
+.redes{
+
+	float: right;
+	position: relative;
+	right: 400px;
+}
+
 .team:hover .cover .overlay {
 	opacity: 1;
 }
@@ -735,6 +736,9 @@ footer .bottom-footer {
 }
 
 footer .social-footer {
+	position: relative;
+	right: -120px;
+	bottom: 200px;
 	padding: 0;
 	list-style: none;
 }
