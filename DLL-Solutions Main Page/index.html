@@ -19,19 +19,19 @@
 	<meta name="msapplication-TileColor" content="#00a8ff">
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-	<!-- Normalize -->
+	<!-- Normalizador -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!-- Owl -->
+	<!-- Coruja -->
 	<link rel="stylesheet" type="text/css" href="css/owl.css">
-	<!-- Animate.css -->
+	<!-- Css das animaçoes -->
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<!-- Font Awesome -->
+	<!-- Fonte -->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
-	<!-- Elegant Icons -->
+	<!-- Icones Elegantes -->
 	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
-	<!-- Main style -->
+	<!-- Estilo Principal -->
 	<link rel="stylesheet" type="text/css" href="css/cardio.css">
 </head>
 
@@ -41,7 +41,6 @@
 	</div>
 	<nav class="navbar">
 		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Habilitar Navegação</span>
@@ -51,7 +50,7 @@
 				</button>
 				<a class="navbar-brand" href="#"><img src="img/DLL-Logo.png" data-active-url="img/DLL-Logo.png" alt=""></a>
 			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
+
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
 					<li><a href="#intro">Home</a></li>
@@ -61,9 +60,9 @@
 					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Login</a></li>
 				</ul>
 			</div>
-			<!-- /.navbar-collapse -->
+
 		</div>
-		<!-- /.container-fluid -->
+
 	</nav>
 	<header id="intro">
 		<div class="container">
@@ -114,9 +113,7 @@
 					<div class="intro-table intro-table-hover">
 						<h5 class="white heading hide-hover">Calendario</h5>
 						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Register Today</h4>
-							<h4 class="white heading small-pt">20% Discount</h4>
-							<a href="#" class="btn btn-white-fill expand">Register</a>
+							<iframe class="calendario" src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTabs=0&showCalendars=0&mode=MONTH&title=Dias%20de%20Trabalho%20DLL-Solutions&showNav=0&showPrint=0&showDate=0&showTz=0&src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043" style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe>
 						</div>
 					</div>
 				</div>
@@ -149,6 +146,7 @@
 				<h4 class="light muted">Alcance melhores resultados com nossos serviços!</h4>
 			</div>
 			<div class="row services">
+				<span class="Scroll">
 				<div class="col-md-4">
 					<div class="service">
 						<div class="icon-holder">
@@ -203,7 +201,7 @@
 						<p class="description">Proporcionamos um atendimento técnico de qualidade para solução de diversos problemas relacionados a redes e computadores.</p>
 					</div>
 				</div>
-
+				</span>
 			</div>
 		</div>
 		<div class="cut cut-bottom"></div>
@@ -215,6 +213,7 @@
 				<h4 class="light muted">Sempre Dando o nosso melhor para te satisfazer</h4>
 			</div>
 			<div class="row">
+				<div class="Scroll">
 				<div class="col-md-4">
 					<div class="team text-center">
 						<div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;">
@@ -223,9 +222,23 @@
 								<h5 class="light light-white">10 - 100 seções por mes</h5>
 							</div>
 						</div>
-						<img class="foto" src="img/team/Guilherme Ferraz.jpeg" alt="Team Image" class="avatar">
+						<img src="img/team/Guilherme Ferraz.jpeg" alt="Team Image" class="avatar">
 						<div class="title">
 							<h4>Guilherme Ferraz</h4>
+							<h5 class="muted regular">Tecnico de Ti</h5>
+						</div>
+						<button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">Sign Up Now</button>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="team text-center">
+						<div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;">
+							<div class="overlay text-center">
+							</div>
+						</div>
+						<img src="img/team/Sergio Magesto.jpeg" alt="Team Image" class="avatar">
+						<div class="title">
+							<h4>Sergio Magesto</h4>
 							<h5 class="muted regular">Tecnico de Ti</h5>
 						</div>
 						<button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">Sign Up Now</button>
@@ -239,7 +252,7 @@
 								<h5 class="light light-white">1 - 5 sessions / month</h5>
 							</div>
 						</div>
-						<img class="foto" src="img/team/Danilo.jpeg" alt="Team Image" class="avatar">
+						<img src="img/team/Danilo.jpeg" alt="Team Image" class="avatar">
 						<div class="title">
 							<h4>Danilo Buzzo</h4>
 							<h5 class="muted regular">Segurança da Informação</h5>
@@ -255,7 +268,7 @@
 								<h5 class="light light-white">1 - 5 sessions / month</h5>
 							</div>
 						</div>
-						<img class="foto" src="img/team/Guilherme Linguester.jpeg" alt="Team Image" class="avatar">
+						<img src="img/team/Guilherme Linguester.jpeg" alt="Team Image" class="avatar">
 						<div class="title">
 							<h4>Guilherme Linguester</h4>
 							<h5 class="muted regular">Tecnico de Ti</h5>
@@ -263,6 +276,7 @@
 						<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Sign Up Now</a>
 					</div>
 				</div>
+			</div>
 			</div>
 		</div>
 	</section>
