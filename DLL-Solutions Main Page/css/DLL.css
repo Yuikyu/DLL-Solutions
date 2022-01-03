@@ -127,8 +127,9 @@ header {
 	width: 100%;
 	color: white;
 	background: rgba(28, 36, 65, 0.93);
-	background: url('../img/header.png');
+	background: url('../img/header.jpg');
 	background-size: cover;
+	padding-bottom: 40px;
 }
 
 header .table {
@@ -182,6 +183,12 @@ nav.navbar {
 	transition: all 0.3s ease;
 }
 
+.contop{
+
+	background-color: #070E18;
+
+}
+
 nav.navbar .navbar-nav li.active a:not(.btn) {
 	color: #00a8ff !important;
 }
@@ -191,7 +198,7 @@ nav.navbar-fixed-top {
 	top: 0;
 	padding: 25px 0;
 	opacity: 0;
-	background: white;
+	background: #070E18;
 	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
 }
 
@@ -284,12 +291,13 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 }
 /* Sections */
 section {
+	background-color:rgb(7,14,24, 0.95);
 	position: relative;
 }
 
 .section {
 	padding: 40px 0;
-	background: #fff;
+	background-color: rgb(7,14,24, 0.95);
 }
 
 .section-padded {
@@ -305,7 +313,7 @@ section {
 	width: 0;
 	height: 0;
 	border-top: 80px solid transparent;
-	border-right: 30px solid white;
+	border-right: 30px solid #070E18;
 }
 
 .cut-bottom {
@@ -317,7 +325,7 @@ section {
 	width: 0;
 	height: 0;
 	border-bottom: 80px solid transparent;
-	border-left: 30px solid white;
+	border-left: 30px solid transparent;
 }
 
 .intro-tables {
@@ -480,8 +488,12 @@ section {
 	top: 100px;
 	display: inline-block;
 	margin-bottom: 40px;
-	padding: 10px;
-	background: white;
+	padding: 6px;
+	border-radius: 10px;
+	border-color: #6B6F72;
+	border-width: 1px;
+	border-style: solid;
+	background: #121921;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
@@ -503,6 +515,8 @@ section {
 
 .service:hover .icon-holder {
 	top: -30px;
+	border-width: 2px;
+	border-color: #00a8ff;
 }
 
 .service:hover .heading {
@@ -1047,7 +1061,7 @@ footer .social-footer li:hover a {
 }
 
 .gray-bg {
-	background: #f7f7f7;
+	background: rgb(7,14,24, 0.95);
 }
 
 .blue {
