@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
+	<link href='css/fullmain.css' rel='stylesheet'/>
+	<script src='js/fullmain.js'></script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DLL-Solutions</title>
@@ -33,9 +35,73 @@
 	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
 	<!-- Estilo Principal -->
 	<link rel="stylesheet" type="text/css" href="css/DLL.css">
+
+		<script>
+			var data = new Date();
+
+			var dia = String(data.getDate()).padStart(2, '0');
+	
+			var mes = String(data.getMonth() + 1).padStart(2, '0');
+			var mesFin = String(data.getMonth() + 2).padStart(2, '0');
+
+			var ano = data.getFullYear();
+
+			dataAtual = ano + '-' + mes + '-' + dia;
+			dataFinal = ano + '-' + mesFin + '-' + dia;
+
+		</script>
+
+		<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      height: 'auto',
+      // stickyHeaderDates: false, // for disabling
+
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right:''
+      },
+
+      // customize the button names,
+      // otherwise they'd all just say "list"
+      views: {
+        listMonth: { buttonText: 'list month' },
+      },
+
+      initialView: 'listMonth',
+      validRange:{ start: dataAtual, end: dataFinal},
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      events: [
+        {
+          title: 'repeating event 1',
+          start:'2022-01-04 08:00',
+          end: '2022-01-04 12:00',
+          duration: '00:30'
+        },
+        {
+          title: 'repeating event 1',
+          start:'2022-01-05 00:30',
+          end: '2022-01-05 06:30',
+          duration: '00:30'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+
+</script>
+
+
 </head>
 
 <body>
+
 	<div class="preloader">
 		<img src="img/loader.gif" alt="Preloader image">
 	</div>
@@ -70,7 +136,7 @@
 				<div class="header-text">
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<h3 class="light white">A nossa missão</h3>
+							<h3 class="light white">A nosssa missão</h3>
 							<h1 class="white typed">É levar a solução</h1>
 							<span class="typed-cursor">|</span>
 						</div>
@@ -113,7 +179,7 @@
 					<div class="intro-table intro-table-hover">
 						<h5 class="white heading hide-hover">Calendario</h5>
 						<div class="bottom">
-							<iframe class="calendario" src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTabs=0&showCalendars=0&mode=MONTH&title=Dias%20de%20Trabalho%20DLL-Solutions&showNav=0&showPrint=0&showDate=0&showTz=0&src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043" style="border-width:0" width="360" height="295" frameborder="0" scrolling="no"></iframe>
+							<div id="calendar"></div>
 						</div>
 					</div>
 				</div>
