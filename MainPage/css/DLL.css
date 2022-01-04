@@ -363,9 +363,19 @@ box{
 }
 
 #calendar{
+	background-color: #121921;
+	position:relative;
+	left: 10%;
+	height:auto;
 	width: auto;
     margin: 0 auto;
-    
+	overflow-y:auto;
+  }
+
+  .subtitulo{
+
+	background-color:blueviolet;
+
   }
 
 .intro-tables .intro-table {
@@ -542,18 +552,17 @@ box{
 
 .formulario{
 
-	position: relative;
-	left:300px;
-	top: -100px;	
+	width: 70%;
+	margin-left: auto;	
 
 }
 
 
 .redes{
+	width: 40%;
+	margin-left: auto;
+	margin-bottom:auto;
 
-	float: right;
-	position: relative;
-	right: 400px;
 }
 
 .team:hover .cover .overlay {
