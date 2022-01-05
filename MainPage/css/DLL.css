@@ -114,7 +114,7 @@ ul.white-list li {
 ul.white-list li:before {
 	content: ' ';
 	position: relative;
-	top: -3px;
+	top: -3px;f
 	display: inline-block;
 	width: 6px;
 	height: 6px;
@@ -122,15 +122,29 @@ ul.white-list li:before {
 	background: white;
 }
 
-header {
-	position: relative;
-	width: 100%;
-	color: white;
+.Teste::before{
+	content:"";
 	background: rgba(28, 36, 65, 0.93);
 	background: url('../img/header.jpg');
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+
+	
+}
+
+.Teste {
+	position: relative;
+	width: 100%;
+
+	
 	background-size: cover;
 	padding-bottom: 40px;
 }
+
+
 
 header .table {
 	display: table;
@@ -341,16 +355,16 @@ section {
 }
 
 .intro-table-first {
-	background-image: url('../img/table-1.png');
+	background-color:#0E5375;
 }
 
 
 .intro-table-third {
-	background-image: url('../img/table-3.jpg');
+	background-color:#0E5375;
 }
 
 .intro-table-hover{
-	background-image: url('../img/table-1.png');
+	background-color:#0E5375;
 	margin: 30px;
 	margin-top: 120px;
 	
@@ -374,7 +388,8 @@ box{
 
   .subtitulo{
 
-	background-color:blueviolet;
+	background: linear-gradient(1turn, #52B956 70%, #81cc84);
+	box-shadow:black 0px 5px 25px;
 
   }
 
