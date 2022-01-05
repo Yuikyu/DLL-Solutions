@@ -356,8 +356,17 @@ section {
 
 .intro-table-first {
 	background-color:#0E5375;
+	
 }
 
+.borda{
+	border-style: solid;
+	border-top-style: hidden;
+	border-color: black;
+	border-width: 2px;
+
+
+}
 
 .intro-table-third {
 	background-color:#0E5375;
