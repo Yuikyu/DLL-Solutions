@@ -445,7 +445,7 @@ box{
 	height: auto;
 	display: flex;
 	overflow-y: hidden;
-	overflow-x: scroll;
+	overflow-x: auto;
 
 }
 
