@@ -117,7 +117,7 @@ ul.white-list li {
 ul.white-list li:before {
 	content: ' ';
 	position: relative;
-	top: -3px;f
+	top: -3px;
 	display: inline-block;
 	width: 6px;
 	height: 6px;
