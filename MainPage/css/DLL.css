@@ -1,4 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+
+
 body {
 	font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -114,7 +117,7 @@ ul.white-list li {
 ul.white-list li:before {
 	content: ' ';
 	position: relative;
-	top: -3px;
+	top: -3px;f
 	display: inline-block;
 	width: 6px;
 	height: 6px;
@@ -122,15 +125,29 @@ ul.white-list li:before {
 	background: white;
 }
 
-header {
-	position: relative;
-	width: 100%;
-	color: white;
+.Teste::before{
+	content:"";
 	background: rgba(28, 36, 65, 0.93);
 	background: url('../img/header.jpg');
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+
+	
+}
+
+.Teste {
+	position: relative;
+	width: 100%;
+
+	
 	background-size: cover;
 	padding-bottom: 40px;
 }
+
+
 
 header .table {
 	display: table;
@@ -341,59 +358,85 @@ section {
 }
 
 .intro-table-first {
-	background-image: url('../img/table-1.png');
+	background-color:#0E5375;
+	
 }
 
+.borda{
+	border-style: solid;
+	border-top-style: hidden;
+	border-color: black;
+	border-width: 2px;
+
+
+}
 
 .intro-table-third {
-	background-image: url('../img/table-3.jpg');
+	background-color:#0E5375;
 }
 
 .intro-table-hover{
-	background-image: url('../img/table-1.png');
+	background-color:#0E5375;
 	margin: 30px;
 	margin-top: 120px;
 	
 }
 
-box{
 
-	display:table;
+.sobre{
+
+	padding-top:120px;
 
 }
 
-#calendar{
-	width: auto;
-    margin: 0 auto;
-    
+  .subtitulo{
+	display: block;
+	background: linear-gradient(1turn, #52B956 70%, #81cc84);
+	box-shadow:black 0px 5px 25px;
+	height:100%;
+	margin-bottom: 0px;
   }
 
-.intro-tables .intro-table {
-	position: relative;
+.subtitulo h2{
+	margin:0px;
+	text-align: center;
+
+}
+
+.content-box::before{
+
+	content:"";
+	position:absolute;
 	width: 100%;
-	height: 300px;
-	margin: 20px 0;
+	height: 100%;
+	background-color: gray;
+	margin-top: 0px;
+	z-index: -1;
+	border-width: 4px;
+	border-top: 0;
+	border-style: solid;
+	border-color: black;
+
 }
 
-.intro-tables .intro-table .heading {
-	margin: 0;
-	padding: 30px;
+  .content-box{
+	display: block;
+	margin-top: 0px;
+	width:100%;
+	height:100%;
+	
+	
+  }
+.content-box h3{
+	padding: 10px;
+	margin:0px;
+
 }
 
-.intro-tables .intro-table .small-heading {
-	margin: 0;
-	padding: 0 30px;
-}
+.left-text{
 
-.intro-tables .intro-table .bottom {
-	position: absolute;
-	bottom: 0;
-}
+	text-align: left;
 
-.intro-tables .intro-table .owl-schedule .schedule-row {
-	padding: 10px 30px;
-	color: white;
-	transition: all 0.3s ease;
 }
 
 .owl-schedule .schedule-row:not(:last-child) {
@@ -540,20 +583,75 @@ box{
 	transition: opacity 0.45s ease;
 }
 
+.form{
+	display:block;
+	width: 90%;
+	max-width: 500px;
+	background-color: cadetblue;
+	border-radius: 9px;
+	box-shadow: 0px 0px 20px black;
+
+}
+
 .formulario{
 
+	width: %;
 	position: relative;
-	left:300px;
-	top: -100px;	
+	left: 20%;
+	bottom:130%
+
+}
+
+.form-group{
+	width: 100%;
+	padding-top:5px;
+	margin:0 auto;
+	padding-left: 20px;
+	font-size: 15px;
+
+}
+
+.form-group input, .form-group textarea{
+
+	width: 99%;
+	padding: 10px;
+
+}
+
+textarea{
+
+	resize: none;
+
+}
+
+.form button[type="submit"]{
+
+	outline:none;
+	border-radius: 5px;
+	
+
+}
+
+.redes{
+	position:absolute;
+	left: 70%;
+	bottom:0%;
+	width: 40%;
 
 }
 
 
-.redes{
+footer .social-footer {
+	position: absolute;
+	left:0%;
+	bottom: -60%;
+	list-style: none;
+	display:inline-flex;
+}
 
-	float: right;
-	position: relative;
-	right: 400px;
+footer li{
+	float:left;
+
 }
 
 .team:hover .cover .overlay {
@@ -731,13 +829,6 @@ footer .bottom-footer {
 	margin-top: 150px;
 }
 
-footer .social-footer {
-	position: relative;
-	right: -120px;
-	bottom: 200px;
-	padding: 0;
-	list-style: none;
-}
 
 footer .social-footer li {
 	display: inline-block;
@@ -1031,6 +1122,11 @@ footer .social-footer li:hover a {
 
 .white {
 	color: white;
+}
+
+.yellow{
+	color:yellow;
+
 }
 
 .light-white {
