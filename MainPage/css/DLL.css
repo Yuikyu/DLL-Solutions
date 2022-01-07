@@ -1,6 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
+*{
 
+	margin:0vmin auto;
+
+}
+
+.fontv{
+
+	font-size: 3vmin;
+
+}
 
 body {
 	font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -16,6 +26,7 @@ body {
 
 .Time{
 	width:30vmin;
+	padding-bottom: 5vmin;
 	display: flex;
 	position:absolute;
 	background-color: gray;
@@ -93,15 +104,15 @@ h3 {
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 3vmin;
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 2vmin;
 }
 
 h6 {
-	font-size: 16px;
+	font-size: 1vmin;
 }
 
 ul.white-list {
@@ -193,10 +204,12 @@ a {
 /* Navigation Bar ( Navbar ) */
 
 nav.navbar {
+	font-size: 2vmin;
 	position: absolute;
 	z-index: 9500;
 	width: 100%;
 	width: 100vw;
+	height:13vmin;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
@@ -214,7 +227,7 @@ nav.navbar .navbar-nav li.active a:not(.btn) {
 nav.navbar-fixed-top {
 	z-index: 9499;
 	top: 0;
-	padding: 25px 0;
+	padding: 2vmin;
 	opacity: 0;
 	background: #070E18;
 	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
@@ -315,7 +328,7 @@ section {
 
 .section {
 	padding-top:0vmin;
-	padding-bottom: 2vmin;
+	padding-bottom: 7vmin;
 	background-color: rgb(7,14,24, 0.95);
 }
 
@@ -365,7 +378,7 @@ section {
   .content-box{
 	display: block;
 	margin-top: 0px;
-	width:95vmin;
+	width:93vmin;
 	height:18vmin;
 	
 	
@@ -410,9 +423,10 @@ section {
 }
 
 .Scroll{
-	width:142vmin;
+	width:150vmin;
 	height: auto;
 	display: flex;
+	margin: 0 auto;
 	overflow-y: hidden;
 	overflow-x: auto;
 
@@ -499,7 +513,8 @@ section {
 .team {
 	width: 32.5vmin;
 	height:55vmin;
-	margin: 1vmin 0;
+	margin: 0.2vmin auto;
+
 	padding-bottom: 5vmin;
 	background: white;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07);
