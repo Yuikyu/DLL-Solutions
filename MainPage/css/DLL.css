@@ -142,6 +142,8 @@ ul.white-list li:before {
 	background: rgba(28, 36, 65, 0.93);
 	background: url('../img/header.jpg');
 	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
 	top:0;
 	left:0;
 	right:0;
@@ -423,11 +425,16 @@ section {
 	}
 }
 
+.row{
+
+	width: 120vmin;
+
+}
+
 .Scroll{
-	width:150vmin;
+	width:100%;
 	height: auto;
-	display: flex;
-	margin: 0 auto;
+	display:flex;
 	overflow-y: hidden;
 	overflow-x: auto;
 
@@ -435,7 +442,7 @@ section {
 
 
 .services {
-	margin: 1vmin;
+	width: 100%;
 }
 
 .service {
@@ -512,7 +519,7 @@ section {
 }
 
 .team {
-	width: 32.5vmin;
+	width: 33.5vmin;
 	height:55vmin;
 	margin: 0.2vmin auto;
 
@@ -557,15 +564,20 @@ section {
 	font-size: 2.5vmin;
 }
 
-.form-group input, .form-group textarea{
+.form-group input{
 
+	height: 5vmin;
+
+}
+
+.form-group input, .form-group textarea{
 	width: 61vmin;
 	padding: 2vmin;
 
 }
 
 textarea{
-
+	height:35vmin;
 	resize: none;
 
 }
@@ -582,22 +594,36 @@ textarea{
 	font-size: 2.5vmin;
 }
 
+.redes::before{
+	content:"";
+
+	background-color: #00a8ff;
+
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+
+}
+
 .redes{
+	
 	position:absolute;
+	display: block;
 	left: 80vmin;
 	bottom:0vmin;
-	width:	60vmin;
+	width:	28vmin;
 	font-size: 3vmin;
-
 }
 
 
 footer .social-footer {
-	position: absolute;
-	left:-3vmin;
-	bottom: -5vmin;
+	position:relative;
+	padding: 0;
+	width: 100%;
 	list-style: none;
 	display:inline-flex;
+	justify-content: center;
 }
 
 footer li{
@@ -744,6 +770,7 @@ footer .social-footer li:hover a {
 
 .light-white {
 	color: rgba(255, 255, 255, 0.5);
+	font-size: 2.5vmin;
 }
 
 .white-bg {
