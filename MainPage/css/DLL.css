@@ -375,6 +375,7 @@ section {
 
 }
 
+
   .content-box{
 	display: block;
 	margin-top: 0px;
@@ -736,6 +737,7 @@ footer .social-footer li:hover a {
 }
 
 .yellow{
+	text-align: center;
 	color:yellow;
 
 }
