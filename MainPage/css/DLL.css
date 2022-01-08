@@ -138,3 +138,25 @@
 	padding-top:35vmin;
 
 }
+
+.sec01{
+	background-color: #070E18;
+	height: 10vmin;
+
+}
+.sec02{
+	background-color: #070E18;
+	width: 100%;
+}
+.sec03{
+	height: 200px;
+	background-color: #070E18;
+	padding: 0 10vmin 0 10vmin;
+
+}
+
+.sec03 h2{
+	color: #fff;
+	font-size: 6vmin;
+	
+}
