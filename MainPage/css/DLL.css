@@ -22,11 +22,11 @@
 
 .navi-bar{
 	position: relative;
-	background: linear-gradient( #684A52 95%,#CEB5A7);
+	background: #070E18;
 	height: 12vmin;
 	width: 100%;
 	display: flex;
-	box-shadow: 0 0 20px 2px #CEB5A7;
+	box-shadow: 0 0 20px 2px #070E18;
 }
 
 .navi{
@@ -64,6 +64,10 @@
 	border-color: #115376;
 }
 
+.navi ul li:hover{
+	background-color: #fff;
+}
+
 .navi ul li{
 	position: relative;
 	margin-left: 1vmin;
@@ -90,10 +94,13 @@
 .navi ul li a:hover{
 
 	text-decoration: none;
-	transition: color 1s;
-	color:#3DA5D9;
+	transition: color 0.5s;
+	
+    background-color: #fff;
 
 }
+
+
 
 .navi ul button{
 
