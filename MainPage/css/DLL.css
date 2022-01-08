@@ -15,7 +15,67 @@
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 50vmin;
+	height: 100vmin;
 	background-image: url("../img/header.jpg");
+
+}
+
+.navi-bar{
+	position: relative;
+	background: linear-gradient( #CEB5A7 95%,#fff);
+	height: 12vmin;
+	width: 100%;
+	display: flex;
+	box-shadow: 0 0.25vmin 25px #2D3319;
+}
+
+.navi{
+	position: relative;
+	display: block;
+	width: fit-content;
+	margin-right: 1vmin;
+	margin-top:auto;
+	margin-bottom:auto;
+	float:right;
+	
+
+}
+
+.navi ul{
+	position: relative;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navi ul li{
+	position: relative;
+	margin:0;
+	padding-left: 1vmin;
+
+}
+
+.logo{
+	position: relative;
+	display: block;
+	margin-left: 1vmin;
+	padding-bottom:1vmin;
+	width: 15vmin;
+	height: 15vmin;
+
+}
+
+.white{
+
+	color:#fff;
+	font-weight: 300;
+
+}
+
+.header-text{
+	position: relative;
+	width: fit-content;
+	padding-top:35vmin;
 
 }
