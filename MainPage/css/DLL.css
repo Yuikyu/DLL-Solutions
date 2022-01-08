@@ -144,20 +144,61 @@
 
 }
 .sec02{
+	position: absolute;
 	background-color: #070E18;
 	width: 100%;
+	height: 100%;
+	padding-top: 4vmin;
+	
 }
 .sec03{
-	height: 200px;
+
+	width: 90%;
 	background-color: #070E18;
 	padding: 0 10vmin 0 10vmin;
-
+	height:fit-content;
+	
+	
 }
-
+.linha{
+	
+	display: flex;
+	flex-flow: row wrap;
+}
 .sec03 h2{
+	height: fit-content;
 	color: #fff;
 	font-size: 6vmin;
 	
+}
+.sec04{
+    height: auto;
+	width: 45%;
+	padding-top: 3vmin;	
+	margin: 0;
+	float: left;
+
+	
+}
+
+.sec04 p {
+	font-size: 3.5vmin;
+	text-align: left;
+	
+
+}
+.sec05{
+   
+	width: 45%;
+	padding-top: 3vmin;	
+	float: right ;
+	padding-right: 10vmin;
+
+	
+}
+.sec05 img{
+	object-fit: contain;
+	float: right;
 }
 h1{
 
