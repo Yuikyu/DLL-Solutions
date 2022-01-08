@@ -32,6 +32,7 @@
 	bottom:0;
 	background-repeat: no-repeat;
 	background-image: url("../img/header.jpg");
+	background-size: cover;
 	z-index: -1;
 }
 
@@ -236,6 +237,47 @@ h6{
 }
 
 p{
+
+	font-style: 1vmin;
+
+}
+.h1{
+
+	font-size: 8vmin;
+
+}
+
+.h2{
+
+	font-size: 6vmin;
+
+}
+
+.h3{
+
+	font-size: 5vmin;
+
+}
+
+.h4{
+
+	font-size: 4vmin;
+
+}
+
+.h5{
+
+	font-style: 3vmin;
+
+}
+
+.h6{
+
+	font-style: 2vmin;
+
+}
+
+.p{
 
 	font-style: 1vmin;
 
