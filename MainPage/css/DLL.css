@@ -1,34 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
-
 *{
-
-	margin:0vmin auto;
-
+	margin: 0 auto;
 }
 
-.fontv{
-
-	font-size: 3vmin;
-
-}
-
-body {
-	font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
-	font-size: 3vmin;
-	overflow-x: hidden;
-	color: #2a3237;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-
-
-
-.Time{
-	width:30vmin;
-	padding-bottom: 5vmin;
-	display: flex;
+.container{
 	position:absolute;
+<<<<<<< Updated upstream
 	background-color: gray;
 	overflow: auto;
 	margin-left: 40vmin;
@@ -169,217 +145,19 @@ header .table {
 }
 
 header .container {
+=======
+	width:100%;
+>>>>>>> Stashed changes
 	height: 100%;
+	background: linear-gradient(#3DA5D9, #115376);
+	z-index: -2;
+	justify-content: center;
 }
 
-header .header-text {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	color: white;
-}
-
-header .typed {
-	display: inline-block;
-	margin: 0;
-}
-
-header .typed-cursor {
-	font-size: 60px;
-	display: inline-block;
-	margin: 0 10px;
-	color: #00a8ff;
-	-webkit-animation-name: flash;
-	animation-name: flash;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-}
-
-a {
-	text-decoration: none;
-	color: #00a8ff;
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-/* Navigation Bar ( Navbar ) */
-
-nav.navbar {
-	font-size: 2vmin;
-	position: absolute;
-	z-index: 9500;
-	width: 100%;
-	width: 100vw;
-	height:13vmin;
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-
-.contop{
-
-	background-color: #070E18;
-
-}
-
-nav.navbar .navbar-nav li.active a:not(.btn) {
-	color: #00a8ff !important;
-}
-
-nav.navbar-fixed-top {
-	z-index: 9499;
-	top: 0;
-	padding: 2vmin;
-	opacity: 0;
-	background: #070E18;
-	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
-}
-
-nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
-	color: #bbb;
-}
-
-.icon-bar {
-	background: #bbb;
-}
-/* Buttons */
-
-.btn {
-	font-size: 18px;
-	display: inline-block;
-	padding: 15px 30px;
-	color: white;
-	border: 2px solid transparent;
-	border-radius: 2px;
-	background: transparent;
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-
-.btn:hover,
-.btn:focus {
-	color: white;
-}
-
-.btn.btn-blue {
-	background: #00a8ff;
-}
-
-.btn.btn-blue:hover {
-	background: #31b9ff;
-}
-
-.btn.btn-blue-fill {
-	color: #00a8ff;
-	border-color: #00a8ff;
-	background: transparent;
-}
-
-.btn.btn-blue-fill:hover {
-	color: white;
-	background: #00a8ff;
-}
-
-.btn.btn-white-fill {
-	color: #fff;
-	border-color: #fff;
-	background: transparent;
-}
-
-.btn.btn-white-fill:hover {
-	color: #00a8ff;
-	background: #fff;
-}
-
-.btn.btn-gray-fill {
-	color: #fff;
-	border-color: #fff;
-	background: transparent;
-}
-
-.btn.btn-gray-fill:hover {
-	border-color: #bbb;
-	background: #bbb;
-}
-
-/* Blink Cursor */
-
-.blink {
+.header{
 	position: relative;
-	top: 4px;
-	display: inline-block;
-	width: 4px;
-	height: 50px;
-	height: 5vh;
-	margin: 0 10px;
-}
-
-.navbar {
-	top: 50px;
-}
-
-.container {
-	position: relative;
-	z-index: 1;
-}
-/* Sections */
-section {
-	background-color:rgb(7,14,24, 0.95);
-	position: relative;
-}
-
-.section {
-	padding-top:0vmin;
-	padding-bottom: 7vmin;
-	background-color: rgb(7,14,24, 0.95);
-}
-
-.section-padded {
-	padding: 140px 0 40px;
-}
-
-
-.sobre{
-	padding-top:6vmin;
-	padding-bottom:20vmin;
-
-}
-
-  .subtitulo{
 	display: block;
-	background: linear-gradient(1turn, #52B956 70%, #81cc84);
-	box-shadow:black 0px 5px 25px;
-	height:4vmin;
-	width: 93vmin;
-	margin-bottom: 0vmin;
-  }
-
-.subtitulo h2{
-	margin:0px;
-	text-align: center;
-	font-size: 3.5vmin;
-
-}
-
-.content-box::before{
-
-	content:"";
-	position:absolute;
-	width: 93vmin;
-	height: 28vmin;
-	background-color: gray;
-	margin-top: 0px;
-	z-index: -1;
-	border-width: 0.35vmin;
-	border-top: 0;
-	border-style: solid;
-	border-color: black;
-
-}
-
-
-  .content-box{
-	display: block;
+<<<<<<< Updated upstream
 	margin-top: 0px;
 	width:93vmin;
 	height:18vmin;
@@ -858,4 +636,10 @@ footer .social-footer li:hover a {
 
 
 
+=======
+	width: 100%;
+	height: 50vmin;
+	background-image: url("../img/header.jpg");
+>>>>>>> Stashed changes
 
+}
