@@ -264,26 +264,22 @@
 .scrol{ 
 	
 	display: flex;
-    height: 50vmin; 
+    height: 50vmin;
     overflow-x: scroll;
     overflow-y: hidden;
-    white-space: nowrap;
+	white-space: nowrap;
 	
 }
 .card-time{
+	margin: 1vmin;
+	display: inline-block;
+	width: 100vmin;
 	background-color: aqua;
 	box-sizing: 50vmin;
 	
 	
 
 }
-
-
-
-
-
-
-
 
 .bkg{
 	background-color: #070E18;
