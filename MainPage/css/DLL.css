@@ -255,6 +255,36 @@
 	grid-column-gap: 50px;
 	grid-row-gap: 50px;
 }
+
+.sec07{
+	border: #3DA5D9;
+	height: 100%;
+}
+
+.scrol{ 
+	
+	display: flex;
+    height: 50vmin; 
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+	
+}
+.card-time{
+	background-color: aqua;
+	box-sizing: 50vmin;
+	
+	
+
+}
+
+
+
+
+
+
+
+
 .bkg{
 	background-color: #070E18;
 	padding: 10vmin 0 10vmin 0;
@@ -292,6 +322,9 @@
 	transition: all 1s;
 	content:"";
 	position: absolute;
+	
+	background-color: #10196b94;
+	opacity: 0.7;
 	border-radius: 5vmin;
 	top:-5vmin;
 	bottom:-5vmin;
@@ -370,6 +403,7 @@
 }
 
 
+
 .footer{
 	padding-top:20vmin;
 	background-image: url("../img/footer.png");
@@ -416,9 +450,9 @@
 }
 
 .contato ul{
-		display: flex;
-		float: left;
-		list-style: none;
+	display: flex;
+	float: left;
+	list-style: none;
 		
 }
 
