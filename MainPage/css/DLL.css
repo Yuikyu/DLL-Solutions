@@ -274,18 +274,26 @@ h1{
 	padding: 10vmin 0 10vmin 0;
 }
 
+.grid-item::before{
+	content:"";
+	position: absolute;
+	top:0; left: 0; bottom: 0; right: 0;
+	background-color: #10196b94;
+	opacity: 0.7;
+	z-index: -1;
+}
+
 .grid-item{
     height: 50vmin;
 	width: 80% ;
-	background-color: #10196b94;
 	border: 1px solid rgba(0, 0, 0, 0.8);
-	padding: 20px;
-	font-size: 30px;
+	padding: 3vmin;
 	text-align: center;
 	border-radius: 5vmin;
-	columns: 30%;
 	color: #fff;
     font-size: 2vmin;
+	z-index: 2;
+
 }
 
 .bkg h2{
@@ -419,7 +427,6 @@ p{
 }
 
 
-
 @keyframes typewriter{
 
 	to{
@@ -472,3 +479,5 @@ p{
 
 	}
 }
+
+
