@@ -43,6 +43,17 @@
 	box-shadow: 0 0 20px 2px #070E18;
 }
 
+
+.mnavi-bar{
+	position: relative;
+	background: #070E18;
+	height: 12vmin;
+	width: 100%;
+	display: flex;
+	box-shadow: 0 0 20px 2px #070E18;
+}
+
+
 .navi{
 	position: relative;
 	display: block;
@@ -51,8 +62,6 @@
 	margin-top:auto;
 	margin-bottom:auto;
 	float:right;
-	
-
 }
 
 .navi ul{
@@ -61,7 +70,6 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-
 }
 
 
@@ -75,47 +83,34 @@
 
 
 .navi ul li a{
-
 	z-index: -1;
 	width: 100%;
 	height: 100%;
 }
 
 .navi ul li a:link{
-
 	text-decoration: none;
-
 }
 .navi ul li a:visited{
-
 	text-decoration: none;
-
 }
 .navi ul li a:active{
-
 	text-decoration: none;
-
 }
 
 .navi ul li a::before{
 	content: "";
 	position: absolute;
 	z-index: 1;
-
-	
-	
 }
 
 .navi ul li a:hover::before{
-
 	animation: turn-on 4.0s forwards;
 }
 
 .navi ul li a:hover{
-
 	transition: color 2s linear 1s;
 	color:#3DA5D9;
-
 }
 
 .navi ul button{
@@ -132,9 +127,11 @@
 }
 
 .navi ul button:hover{
-
+	transition: all 2s linear;
+	background-color: #3dd4d9;
+	border-color: #3dd4d9;
 	box-shadow: 0px 0px 30vmin 10vmin #3DA5D9;
-
+	transition: all 2s linear;
 }
 
 
@@ -145,7 +142,6 @@
 	padding-bottom:1vmin;
 	width: 15vmin;
 	height: 15vmin;
-
 }
 
 
@@ -171,17 +167,12 @@
 
 
 .white{
-
 	color:#fff;
 	font-weight: 300;
-	
-
 }
 .black{
-
 	color: #000;
 	font-weight:300;
-
 }
 
 .header-text{
@@ -256,11 +247,6 @@
 	float: right;
 	height: 45vmin;
 }
-h1{
-
-	font-size: 8vmin;
-
-}
 .sec06{
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
@@ -274,26 +260,100 @@ h1{
 	padding: 10vmin 0 10vmin 0;
 }
 
+
 .grid-item::before{
+	transition: all 1s;
 	content:"";
 	position: absolute;
-	top:0; left: 0; bottom: 0; right: 0;
-	background-color: #10196b94;
-	opacity: 0.7;
+	border-radius: 5vmin;
+	top:5vmin;
+	bottom:5vmin;
+	left: -5vmin;
+	right: -5vmin;
+	background-color:#070E18;
+	opacity: 1;
+	z-index: -1;
+}
+.grid-item:hover::before{
+	transition: all 1s;
+	content:"";
+	position: absolute;
+	border-radius: 5vmin;
+	top:50%;
+	bottom:50%;
+	left: -5vmin;
+	right: -5vmin;
+	background-color:#070E18;
+	opacity: 1;
+	z-index: -1;
+}
+
+.grid-item::after{
+	transition: all 1s;
+	content:"";
+	position: absolute;
+	border-radius: 5vmin;
+	top:-5vmin;
+	bottom:-5vmin;
+	left: 5vmin;
+	right: 5vmin;
+	background-color:#070E18;
+	opacity: 1;
+	z-index: -1;
+}
+.grid-item:hover::after{
+	transition: all 1s;
+	content:"";
+	position: absolute;
+	border-radius: 5vmin;
+	top:-5vmin;
+	bottom:-5vmin;
+	left: 50%;
+	right: 50%;
+	background-color:#070E18;
+	opacity: 1;
+	z-index: -1;
+}
+
+
+
+.grid-item::after{
+	content:"";
+	position: absolute;
+	border-radius: 5vmin;
+	top:-5vmin;
+	bottom:-5vmin;
+	left: 5vmin;
+	right: 5vmin;
+	background-color:#070E18;
+	opacity: 1;
 	z-index: -1;
 }
 
 .grid-item{
+	transition: all 1s;
+	position: relative;
 	width: 80%;
-	border: 1px solid rgba(0, 0, 0, 0.8);
-	padding: 3vmin;
 	text-align: center;
+	padding: 3vmin;
+	border: 0.4vmin solid rgba(0, 0, 0, 0.8);
 	border-radius: 5vmin;
 	color: #fff;
     font-size: 2vmin;
 	z-index: 2;
+}
+
+
+.grid-item:hover{
+	transition: border 3s;
+	transition: background-color 1s 0.85s;
+	border: 0.2 solid;
+	border: 0.4vmin solid #3DA5D9;
+	background-color: midnightblue;
 
 }
+
+
 
 .bkg h2{
 	text-align:  center;
@@ -370,12 +430,9 @@ h1{
 
 .icon{
 	width: 4vmin;
-
-
 }
-
+/*Font Size*/
 h1{
-
 	font-size: 8vmin;
 }
 h2{
@@ -389,19 +446,14 @@ h4{
 }
 h5{
 	font-style: 3vmin;
-
 }
 h6{
 	font-style: 2vmin;
 }
 p{
 	font-style: 1vmin;
-
 }
-
-
 .h1{
-
 	font-size: 8vmin;
 }
 .h2{
@@ -415,67 +467,50 @@ p{
 }
 .h5{
 	font-style: 3vmin;
-
 }
 .h6{
 	font-style: 2vmin;
 }
 .p{
 	font-style: 1vmin;
-
 }
 
-
+/*Animações Keyframe*/
 @keyframes typewriter{
-
 	to{
 		left:100%
-	
 	}
-
 }
-
 @keyframes blinking {
-
 	to{
 		background-color: transparent;
-	}
-	
+	}	
 }
 
 @keyframes turn-on{
-
 	0%{
 		left:0; bottom:0;
 		width: 0%;
 		height: 1vmin;
 		background-color: transparent;
-
-
 	}
-
 	33%{
 		left:0; bottom:0;
 		width: 100%;
 		height: 1vmin;
-		background-color: #3DA5D9;
-
-		
+		background-color: #3DA5D9;		
 	}
-
 	66%{
 		left:100%; bottom:0;
 		width: 0%;
 		height: 1vmin;
 		background-color: transparent;
-
 	}
 	99%{
 		left:100%; bottom:0;
 		width: 0%;
 		height: 1vmin;
 		background-color: transparent;
-
 	}
 }
 
