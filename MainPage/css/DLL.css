@@ -17,9 +17,7 @@
 	display: block;
 	width: 100%;
 	height: 100vmin;
-	
-
-
+	padding-bottom: 20vmin;
 }
 
 
@@ -75,16 +73,6 @@
 	padding: 1vmin;
 }
 
-.navi ul li a::before{
-	content: "";
-	position: absolute;
-	width: 0%;
-	height: 100%;
-	border-style: solid;
-	border-right-style: hidden;
-	border-color: transparent;
-	border-width: 0.25vmin;
-}
 
 .navi ul li a{
 
@@ -109,22 +97,72 @@
 
 }
 
-.navi ul li a::before:hover{
+.navi ul li a::before{
+	content: "";
+	position: absolute;
+	z-index: 1;
 
-	text-decoration: none;
 	
-	transition: all 1s;
-	border-color: #3DA5D9;
-	width: 100%;
+	
+}
+
+.navi ul li a:hover::before{
+
+	animation: turn-on 4.0s forwards;
+}
+
+@keyframes turn-on{
+
+	0%{
+		left:0; bottom:0;
+		width: 0%;
+		height: 1vmin;
+		background-color: transparent;
+
+
+	}
+
+	33%{
+		left:0; bottom:0;
+		width: 100%;
+		height: 1vmin;
+		background-color: #3DA5D9;
+
+		
+	}
+
+	66%{
+		left:100%; bottom:0;
+		width: 0%;
+		height: 1vmin;
+		background-color: transparent;
+
+	}
+	99%{
+		left:100%; bottom:0;
+		width: 0%;
+		height: 1vmin;
+		background-color: transparent;
+
+	}
+}
+
+.navi ul li a:hover{
+
+	transition: color 2s linear 1s;
+	color:#3DA5D9;
 
 }
 
-
-
 .navi ul button{
-
+	height: 7vmin;
+	width: 20vmin;
+	background-color: #3DA5D9;
+	border-color: #3DA5D9;
 	padding-left: 2vmin;
-
+	font-size: 3vmin;
+	font-weight: 300;
+	color:black;
 }
 
 
@@ -136,6 +174,43 @@
 	width: 15vmin;
 	height: 15vmin;
 
+}
+
+
+
+.header-text h1::before, header h1::after{
+	content:"";
+	position: absolute;
+	top: 75%; left: 0; bottom: 0; right: 0;
+}
+
+.header-text h1::before{
+	background: #070E18;
+	animation: typewriter 3s steps(18) 0.2s forwards;
+}
+
+.header-text h1::after{
+	width: 0.50vmin;
+	background: black;
+	animation: typewriter 3s steps(18) 0.2s forwards,
+				blinking 0.8s steps(2,start) both infinite;
+}
+
+@keyframes typewriter{
+
+	to{
+		left:100%
+	
+	}
+
+}
+
+@keyframes blinking {
+
+	to{
+		background-color: transparent;
+	}
+	
 }
 
 .white{
@@ -154,7 +229,9 @@
 .header-text{
 	position: relative;
 	width: fit-content;
-	padding-top:35vmin;
+	padding-top:20vmin;
+	font-family: "Source Code Pro", monospace;
+	text-align: center;
 
 }
 
@@ -219,7 +296,7 @@
 }
 .sec05 img{
 	float: right;
-	width: 60vmin;
+	width: 80vmin;
 	height:60vmin;
 }
 h1{
@@ -267,6 +344,68 @@ h1{
 }
 
 
+.footer{
+	padding-top:20vmin;
+	background-image: url("../img/footer.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.footer-bottom::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 12vmin;
+	background-color:#070E18;
+	opacity: 0.5;
+	filter:blur(0.08vmin);
+	z-index: -1;
+}
+
+.footer-bottom{
+	position: relative;
+	width: 100%;
+	height:12vmin;
+	z-index: 2;
+	
+}
+
+.contato{
+	display: flex;
+	width: 70%;
+	height:10vmin;
+}
+
+.contato h4{
+
+	
+
+}
+
+.contato label{
+
+	margin:none;
+
+}
+
+.contato ul{
+		display: flex;
+		float: left;
+		list-style: none;
+		
+}
+
+.contato ul li{
+
+	margin-left: 1vmin
+
+}
+
+.icon{
+	width: 4vmin;
+
+
+}
 
 h1{
 
@@ -293,4 +432,29 @@ p{
 
 }
 
+
+.h1{
+
+	font-size: 8vmin;
+}
+.h2{
+	font-size: 6vmin;
+}
+.h3{
+	font-size: 5vmin;
+}
+.h4{
+	font-size: 4vmin;
+}
+.h5{
+	font-style: 3vmin;
+
+}
+.h6{
+	font-style: 2vmin;
+}
+.p{
+	font-style: 1vmin;
+
+}
 
