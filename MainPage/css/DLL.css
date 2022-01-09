@@ -256,11 +256,6 @@
 	float: right;
 	height: 45vmin;
 }
-h1{
-
-	font-size: 8vmin;
-
-}
 .sec06{
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
@@ -269,15 +264,46 @@ h1{
 	grid-column-gap: 50px;
 	grid-row-gap: 50px;
 }
+
+.sec07{
+	border: #3DA5D9;
+	height: 100%;
+}
+
+.scrol{ 
+	
+	display: flex;
+    height: 50vmin; 
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+	
+}
+.card-time{
+	background-color: aqua;
+	box-sizing: 50vmin;
+	
+	
+
+}
+
+
+
+
+
+
+
+
 .bkg{
 	background-color: #070E18;
 	padding: 10vmin 0 10vmin 0;
 }
 
+
 .grid-item::before{
 	content:"";
 	position: absolute;
-	top:0; left: 0; bottom: 0; right: 0;
+	
 	background-color: #10196b94;
 	opacity: 0.7;
 	z-index: -1;
@@ -308,6 +334,7 @@ h1{
 	margin: 0 auto;
 
 }
+
 
 
 .footer{
@@ -356,9 +383,9 @@ h1{
 }
 
 .contato ul{
-		display: flex;
-		float: left;
-		list-style: none;
+	display: flex;
+	float: left;
+	list-style: none;
 		
 }
 
