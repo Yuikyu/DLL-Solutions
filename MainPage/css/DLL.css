@@ -265,8 +265,8 @@
 	border-radius: 5vmin;
 	top:5vmin;
 	bottom:5vmin;
-	left: -5vmin;
-	right: -5vmin;
+	left: -1vmin;
+	right: -1vmin;
 	background-color:#070E18;
 	opacity: 1;
 	z-index: -1;
@@ -278,8 +278,8 @@
 	border-radius: 5vmin;
 	top:50%;
 	bottom:50%;
-	left: -5vmin;
-	right: -5vmin;
+	left: -1vmin;
+	right: -1vmin;
 	background-color:#070E18;
 	opacity: 1;
 	z-index: -1;
@@ -293,8 +293,8 @@
 	background-color: #10196b94;
 	opacity: 0.7;
 	border-radius: 5vmin;
-	top:-5vmin;
-	bottom:-5vmin;
+	top:-1vmin;
+	bottom:-1vmin;
 	left: 5vmin;
 	right: 5vmin;
 	background-color:#070E18;
@@ -306,8 +306,8 @@
 	content:"";
 	position: absolute;
 	border-radius: 5vmin;
-	top:-5vmin;
-	bottom:-5vmin;
+	top:-1vmin;
+	bottom:-1vmin;
 	left: 50%;
 	right: 50%;
 	background-color:#070E18;
@@ -449,13 +449,14 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	content: "";
-	top:0;left: -40vmin;right: 0;bottom: -10vmin;
+	top:0;left: -40vmin;right: -20vmin;bottom: -10vmin;
 	position: absolute;
+	margin-left: 20vmin;
 }
 
 .footer-box{
 	position: relative;
-	display: flex;	
+	display: flex;
 	width: 58vmin;
 	height: 42vmin;
 }
@@ -463,9 +464,9 @@
 .contato{
 	position: relative;
 	margin:0 auto;
-	margin-right: 8vmin;
+	margin-right: -14vmin;
 	padding: 5vmin;
-	padding-top:20vmin;
+	padding-top:24vmin;
 	display: flex;
 	flex-flow: column;
 	width: 70%;
@@ -478,12 +479,14 @@
 	height: 55vmin;
 	width: auto;
 	z-index: 2;
+	flex-shrink: 1;
 
 }
 
 .email{
 
-	margin-top: 13vmin;
+	margin-top: 0vmin;
+	margin-left: -4vmin;
 	color:black;
 }
 
@@ -518,13 +521,13 @@ h4{
 	font-size: 4vmin;
 }
 h5{
-	font-style: 3vmin;
+	font-size: 3.5vmin;
 }
 h6{
-	font-style: 2vmin;
+	font-size: 2vmin;
 }
 p{
-	font-style: 1vmin;
+	font-size: 1vmin;
 }
 .h1{
 	font-size: 8vmin;
@@ -539,13 +542,13 @@ p{
 	font-size: 4vmin;
 }
 .h5{
-	font-style: 3vmin;
+	font-size: 3vmin;
 }
 .h6{
-	font-style: 2vmin;
+	font-size: 2vmin;
 }
 .p{
-	font-style: 1vmin;
+	font-size: 1vmin;
 }
 
 /*Animações Keyframe*/
