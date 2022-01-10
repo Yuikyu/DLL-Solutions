@@ -442,9 +442,6 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: #3dd4d9;
-	border-radius: 0vmin 10vmin 0vmin 10vmin;
-
 }
 
 .footer-box{
@@ -469,7 +466,14 @@
 
 }
 
+.email{
+
+	margin-top: 13vmin;
+	color:black;
+}
+
 .contato ul{
+	padding-top:2vmin;
 	padding:0;
 	display: flex;
 	list-style: none;
@@ -478,12 +482,12 @@
 
 .contato ul li{
 	
-	margin-left: 1vmin
+	margin-left: 2vmin
 
 }
 
 .icon{
-	width: 4vmin;
+	width: 7vmin;
 }
 /*Font Size*/
 h1{
