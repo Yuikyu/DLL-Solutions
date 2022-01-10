@@ -1,6 +1,6 @@
 *{
 	margin: 0 auto;
-	
+	font-family: "Roboto","Arial",sans-serif;
 }
 
 .container{
@@ -69,10 +69,10 @@
 
 
 .navi ul li{
+	height: 10vh;
 	position: relative;
 	display: block;
-	margin-left: 1vh;
-	margin-right:1vh;
+	margin: auto;
 	padding: 1vh;
 	justify-content: center;
 }
@@ -82,6 +82,7 @@
 	z-index: -1;
 	width: 10vh;
 	height: 10vh;
+
 }
 
 .navi ul li a:link{
@@ -162,9 +163,9 @@
 }
 
 
-
 .white{
 	color:#fff;
+	font-family: "Source Code Pro", monospace;
 	font-weight: 300;
 }
 .black{
@@ -510,46 +511,46 @@
 }
 /*Font Size*/
 h1{
-	font-size: 8vh;
+	font-size: 7vh;
 }
 h2{
-	font-size: 6vh;
+	font-size: 5vh;
 }
 h3{
-	font-size: 5vh;
+	font-size: 4vh;
 }
 h4{
-	font-size: 4vh;
-}
-h5{
-	font-size: 3.5vh;
-}
-h6{
-	font-size: 2vh;
-}
-p{
-	font-size: 1vh;
-}
-.h1{
-	font-size: 8vh;
-}
-.h2{
-	font-size: 6vh;
-}
-.h3{
-	font-size: 5vh;
-}
-.h4{
-	font-size: 4vh;
-}
-.h5{
 	font-size: 3vh;
 }
-.h6{
+h5{
+	font-size: 2.5vh;
+}
+h6{
+	font-size: 1vh;
+}
+p{
+	font-size: 0.5vh;
+}
+.h1{
+	font-size: 7vh;
+}
+.h2{
+	font-size: 5vh;
+}
+.h3{
+	font-size: 4vh;
+}
+.h4{
+	font-size: 3vh;
+}
+.h5{
 	font-size: 2vh;
 }
-.p{
+.h6{
 	font-size: 1vh;
+}
+.p{
+	font-size: 0.5vh;
 }
 
 /*Animações Keyframe*/
@@ -1098,13 +1099,13 @@ p{
 	}
 	/*Font Size*/
 	h1{
-		font-size: 8vmin;
+		font-size: 7vmin;
 	}
 	h2{
-		font-size: 6vmin;
+		font-size: 5vmin;
 	}
 	h3{
-		font-size: 5vmin;
+		font-size: 4vmin;
 	}
 	h4{
 		font-size: 3vmin;
@@ -1113,33 +1114,32 @@ p{
 		font-size: 2.5vmin;
 	}
 	h6{
-		font-size: 2vmin;
+		font-size: 1vmin;
 	}
 	p{
-		font-size: 1vmin;
+		font-size: 0.5vmin;
 	}
 	.h1{
-		font-size: 8vmin;
+		font-size: 7vmin;
 	}
 	.h2{
-		font-size: 6vmin;
-	}
-	.h3{
 		font-size: 5vmin;
 	}
-	.h4{
+	.h3{
 		font-size: 4vmin;
 	}
-	.h5{
-		font-size: 2.5vmin;
+	.h4{
+		font-size: 3vmin;
 	}
-	.h6{
+	.h5{
 		font-size: 2vmin;
 	}
-	.p{
+	.h6{
 		font-size: 1vmin;
 	}
-	
+	.p{
+		font-size: 0.5vmin;
+	}
 	/*Animações Keyframe*/
 	@keyframes typewriter{
 		to{
