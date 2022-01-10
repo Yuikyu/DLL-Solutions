@@ -250,7 +250,11 @@
 	grid-row-gap: 5vmin;
 }
 
-
+.nosso-time{
+	text-align: center;
+	color: #fff;
+	background-color: #070E18;
+}
 
 .bkg{
 	background-color: #070E18;
@@ -521,7 +525,11 @@ h4{
 	font-size: 4vmin;
 }
 h5{
+<<<<<<< Updated upstream
 	font-size: 3.5vmin;
+=======
+	font-size: 3vmin;
+>>>>>>> Stashed changes
 }
 h6{
 	font-size: 2vmin;
@@ -538,12 +546,15 @@ p{
 .h3{
 	font-size: 5vmin;
 }
+<<<<<<< Updated upstream
 .h4{
 	font-size: 4vmin;
 }
 .h5{
 	font-size: 3vmin;
 }
+=======
+>>>>>>> Stashed changes
 .h6{
 	font-size: 2vmin;
 }
