@@ -456,8 +456,6 @@
 .footer-box{
 	position: relative;
 	display: flex;	
-	margin-left: 54.5vmin;
-	margin-top: 2.35vmin;
 	width: 58vmin;
 	height: 42vmin;
 }
