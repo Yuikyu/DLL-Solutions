@@ -35,11 +35,12 @@
 }
 
 .navi-bar{
-	position: relative;
+	position: fixed;
 	background: #070E18;
 	height: 12vmin;
 	width: 100%;
 	display: flex;
+	z-index: 4;
 }
 
 
@@ -631,11 +632,12 @@ p{
 	}
 	
 	.navi-bar{
-		position: relative;
+		position: fixed;
 		background: #070E18;
 		height: 12vmin;
 		width: 100%;
 		display: flex;
+		z-index: 4;
 	}
 	
 	
