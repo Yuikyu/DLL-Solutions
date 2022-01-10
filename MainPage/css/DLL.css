@@ -425,28 +425,37 @@
 
 }
 
-
-
-.footer{
-	padding-top:20vmin;
-	height: 70vmin;
-	background-image: url("../img/footer.png");
+.footer::before{
+	content:"";
+	position: absolute;
+	top: -2vmin;right: 0;bottom: 0;left: 0;
 	background-repeat: no-repeat;
 	background-size:cover;
+	background-image: url("../img/header.jpg");
+	transform:rotate(180deg);
+
+
+}
+
+.footer{
+	position: relative;
+	height: 70vmin;
+	display: flex;
 }
 
 
 .footer-box::before{
-
+	background-image: url("../img/cartao.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	content: "";
-	width: 100%;
-	height: 100%;
+	top:0;left: -40vmin;right: 0;bottom: -10vmin;
 	position: absolute;
 }
 
 .footer-box{
 	position: relative;
-	display: flex;
+	display: flex;	
 	margin-left: 54.5vmin;
 	margin-top: 2.35vmin;
 	width: 58vmin;
@@ -458,11 +467,19 @@
 	margin:0 auto;
 	margin-right: 8vmin;
 	padding: 5vmin;
-	padding-top:10vmin;
+	padding-top:20vmin;
 	display: flex;
 	flex-flow: column;
 	width: 70%;
 	height:10vmin;
+
+}
+
+.homem{
+	position: relative;
+	height: 55vmin;
+	width: auto;
+	z-index: 2;
 
 }
 
