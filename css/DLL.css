@@ -77,7 +77,7 @@
 
 
 .navi ul li a{
-	position: relative;
+	
 	z-index: -1;
 	width: 10vh;
 	height: 10vh;
@@ -249,6 +249,7 @@
 }
 
 .nosso-time{
+	padding-top: 15vh;
 	text-align: center;
 	color: #fff;
 	background-color: #070E18;
@@ -356,7 +357,7 @@
 
 .container2{
 
-	width: 90%;
+	width: 100%;
 	height: 60vh;
 	display: block;
 
@@ -364,7 +365,7 @@
 
 .scroll2{
 	display: flex;
-	width: 100%;
+	width: 90%;
 	height: 60vh;
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -377,7 +378,7 @@
 
 	text-align: center;
 	background-color: white;
-	width: 45vh;
+	width: 42vh;
 	flex-shrink: 0;
 	margin: 1vh;
 	border-radius:  5vh 0 5vh 0;
@@ -449,7 +450,7 @@
 
 .footer{
 	position: relative;
-	height: 40vh;
+	height: 30vh;
 	display: flex;
 	flex-flow: column;
 }
@@ -475,7 +476,7 @@
 .logo-footer{
 	margin: 0;
 	width:auto;
-	height: 40vh;
+	height: 30vh;
 
 }
 
@@ -928,6 +929,12 @@ p{
 		z-index: 2;
 	}
 	
+	.nosso-time{
+		padding-top: 15vmin;
+		text-align: center;
+		color: #fff;
+		background-color: #070E18;
+	}
 	
 	.grid-item:hover{
 		transition: all 3s;
