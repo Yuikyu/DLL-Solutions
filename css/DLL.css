@@ -844,6 +844,11 @@ p{
 		transition: all 2s linear;
 	}
 	
+	.navi ul button:active{
+
+		border-style: inset;
+
+	}
 	
 	.logo{
 		position: relative;
