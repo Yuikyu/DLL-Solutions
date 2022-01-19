@@ -748,14 +748,29 @@ p{
 	
 	.navi-bar{
 		position: fixed;
+		top:0;
+		right: 0;
 		background: #070E18;
-		height: 12vmin;
-		width: 100%;
+		height: 100%;
+		width: 0%;
 		display: flex;
 		z-index: 4;
 	}
 	
-	
+	.menu{
+
+
+
+	}
+
+	.navi-button{
+
+		float:right;
+		height: 100%;
+		width: 100%;
+		
+
+	}
 	
 	.navi{
 		width: 100%;
@@ -772,6 +787,7 @@ p{
 	.navi ul{
 		position: relative;
 		display: flex;
+		flex-direction: column;
 		list-style: none;
 		margin: 0;
 		padding: 0;
