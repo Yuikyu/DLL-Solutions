@@ -618,7 +618,7 @@ p{
 	}
 }
 
-  svg {
+  .loader-wrapper svg {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -628,6 +628,9 @@ p{
   
   .stroke-still {
 	stroke: #232323;
+  }
+  .stroke-still2 {
+	stroke: #fff;
   }
   
   .stroke-animation {
@@ -757,17 +760,15 @@ p{
 		z-index: 4;
 	}
 	
-	.menu{
-
-
-
-	}
 
 	.navi-button{
 
 		float:right;
-		height: 100%;
-		width: 100%;
+		padding-right: 10px;
+		height: 8%;
+		width: 8%;
+		background-color: transparent;
+		border-style: none;
 		
 
 	}
