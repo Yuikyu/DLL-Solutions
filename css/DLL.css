@@ -865,11 +865,11 @@ p{
 	}
 	
 	.navi ul li a:hover::before{
-		animation: turn-on 4.0s forwards;
+		animation: turn-on 2.0s forwards;
 	}
 	
 	.navi ul li a:hover{
-		transition: color 2s linear 1s;
+		transition: color 0.5s linear 0.5s;
 		color:#3DA5D9;
 	}
 	
