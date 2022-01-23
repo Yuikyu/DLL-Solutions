@@ -34,6 +34,12 @@
 	z-index: -1;
 }
 
+.navi-button{
+
+	display: none;
+
+}
+
 .navi-bar{
 	position: fixed;
 	background: #070E18;
@@ -759,29 +765,47 @@ p{
 		display: flex;
 		flex-direction: column;
 		z-index: 4;
+		transition: transform 0.5s;
+		transform:translateX(100%);
 	}
 	
+	.navi-bar[data-visible="true"]{
+		transition: transform 0.5s;
+		transform:translateX(0%);
+
+	}
+
+	.navi-button::before{
+		content: "";
+		position: absolute;
+		left:0.8vw;
+		top:2.5vh;
+		right: 0.8vw;
+		bottom:2.5vh;
+		background-color:#070E18;
+		opacity: 1;
+		z-index: -1;
+	}
 
 	.navi-button{
 		position: fixed;
+		display: block;
 		float:right;
-		padding-right: 10px;
+		padding-right: 2vw;
 		height: 8%;
 		width: 8%;
+		transition: right 0.5s;
 		right:0%;
 		background-color: transparent;
 		border-style: none;
 		z-index: 5;
-		
-		
-	}
-	
-	.navi-button:active{
-
-
-
 	}
 
+	.navi-button[data-visible="true"]{
+		transition: all 0.5s;
+		right: 70%;
+
+	}
 	.navi{
 		width: fit-content;
 		height: fit-content;
