@@ -791,9 +791,10 @@ p{
 		position: fixed;
 		display: block;
 		float:right;
+		flex-shrink: 0;
 		padding-right: 2vw;
-		height: 8%;
-		width: 8%;
+		height: 10%;
+		width: 10%;
 		transition: right 0.5s;
 		right:0%;
 		background-color: transparent;
