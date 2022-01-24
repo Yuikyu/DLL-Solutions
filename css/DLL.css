@@ -814,30 +814,24 @@ p{
 
 	}
 	.navi{
-		width: fit-content;
-		height: fit-content;
-		position: relative;
-		display: block;
-		margin-left: 0.5vmin;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
 	}
 	
 	.navi ul{
-		position: relative;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
-		list-style: decimal;
+		list-style: none;
 	}
 	
 	
 	
 	.navi ul li{
-		position: relative;
-		display: block;
-		margin-left: 0vmin;
-		margin-right:0vmin;
-		padding: 1vmin;
+		margin: 0 auto;
 		justify-content: center;
 	}
 	
@@ -846,6 +840,7 @@ p{
 		z-index: -1;
 		width: 10vmin;
 		height: 10vmin;
+		font-size: 1.3rem;
 	}
 	
 	.navi ul li a:link{
@@ -874,12 +869,10 @@ p{
 	}
 	
 	.navi ul button{
-		height: 7vmin;
-		width: 20vmin;
+		width: 100%;
 		background-color: #3DA5D9;
 		border-color: #3DA5D9;
-		padding-left: 2vmin;
-		font-size: 3vmin;
+		font-size: 1.4rem;
 		border-width: 0.35vmin;
 		font-weight: 300;
 		color:black;
@@ -904,12 +897,11 @@ p{
 	.logo{
 		position: relative;
 		display: block;
-		margin-left: 1vmin;
+		margin:	0 auto;
 		padding-bottom:1vmin;
-		width: 15vmin;
-		height: 15vmin;
-		margin-right: 0;
-	}
+		width: 50%;
+		height: auto;
+		}
 	
 	
 	.header-text h1::before, header h1::after{
