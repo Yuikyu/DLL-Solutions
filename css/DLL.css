@@ -1,6 +1,13 @@
 *{
 	margin: 0 auto;
 	font-family: "Roboto","Arial",sans-serif;
+	max-width: 100%;
+}
+
+html{
+
+	scroll-behavior: smooth;
+
 }
 
 .container{
@@ -12,7 +19,6 @@
 	justify-content: center;
 }
 
-
 .header{
 	position: relative;
 	display: block;
@@ -20,7 +26,6 @@
 	height: 100vh;
 	padding-bottom: 20vh;
 }
-
 
 .header::before{
 	content: "";
@@ -33,6 +38,12 @@
 	background-image: url("../img/header.jpg");
 	background-size:cover;
 	z-index: -1;
+}
+
+.navi-button{
+
+	display: none;
+
 }
 
 .navi-bar{
@@ -69,9 +80,7 @@
 
 
 .navi ul li{
-	height: 10vh;
 	position: relative;
-	display: block;
 	margin: auto;
 	padding: 1vh;
 	justify-content: center;
@@ -79,6 +88,7 @@
 
 
 .navi ul li a{
+	
 	z-index: -1;
 	width: 10vh;
 	height: 10vh;
@@ -140,6 +150,7 @@
 	padding-bottom:1vh;
 	width: 15vh;
 	height: 15vh;
+	margin-right: 0;
 }
 
 
@@ -236,8 +247,7 @@
 	
 }
 .sec05 img{
-	float: right;
-	height: 45vh;
+	width: 100%;
 }
 .sec06{
 	display: grid;
@@ -249,6 +259,7 @@
 }
 
 .nosso-time{
+	padding-top: 15vh;
 	text-align: center;
 	color: #fff;
 	background-color: #070E18;
@@ -356,18 +367,17 @@
 
 .container2{
 
-	width: 90%;
+	width: 100%;
 	height: 60vh;
-	
+	display: block;
 
 }
 
 .scroll2{
-	
 	display: flex;
-	width: 100%;
+	width: 70%;
 	height: 60vh;
-	overflow-x: scroll;
+	overflow-x: auto;
 	overflow-y: hidden;
 	border-radius:  5vh 0 5vh 0;
 	padding: 1.5vh;
@@ -378,11 +388,10 @@
 
 	text-align: center;
 	background-color: white;
-	width: 50vh;
+	width: 24%;
 	flex-shrink: 0;
 	margin: 1vh;
 	border-radius:  5vh 0 5vh 0;
-
 	
 }
 
@@ -397,10 +406,21 @@
 }
 
 .bkg-team{
+
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url("/img/team/globo-network2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bkg-team{
+	position: relative;
 	width: 100%;
 	height: 20vh;
-	background-color: tomato;
-	border-radius : 5vh 0 5vh 0;
+	border-radius : 4vh 0 5vh 0;
 	
 }
 .avatar {
@@ -430,66 +450,45 @@
 .footer::before{
 	content:"";
 	position: absolute;
-	top: -2vh;right: 0;bottom: 0;left: 0;
+	top: 0;right: 0;bottom: 0;left: 0;
 	background-repeat: no-repeat;
 	background-size:cover;
-	background-image: url("../img/header.jpg");
-	transform:rotate(180deg);
-
-
+	background-color: #03080e;
 }
+
 
 .footer{
 	position: relative;
-	height: 70vh;
+	height: 30vh;
 	display: flex;
-}
-
-
-.footer-box::before{
-	background-image: url("../img/cartao.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	content: "";
-	top:0;left: -40vh;right: -20vh;bottom: -10vh;
-	position: absolute;
-	margin-left: 20vh;
+	flex-flow: column;
 }
 
 .footer-box{
 	position: relative;
 	display: flex;
-	width: 58vh;
-	height: 42vh;
+	width: 100%;
+	height:100%;
+	justify-content: space-between;
 }
 
 .contato{
 	position: relative;
-	margin:0 auto;
-	margin-right: -14vh;
-	padding: 5vh;
-	padding-top:24vh;
 	display: flex;
 	flex-flow: column;
-	width: 70%;
+	width: 25%;
 	height:10vh;
-
+	margin: 0;
+	margin-right: 25vw;
+	margin-top:auto;
+	margin-bottom:auto;
 }
 
-.homem{
-	position: relative;
-	height: 55vh;
-	width: auto;
-	z-index: 2;
-	flex-shrink: 1;
+.logo-footer{
+	margin: 0;
+	width:auto;
+	height: 30vh;
 
-}
-
-.email{
-
-	margin-top: 0vh;
-	margin-left: -4vh;
-	color:black;
 }
 
 .contato ul{
@@ -504,6 +503,13 @@
 	
 	margin-left: 2vh
 
+}
+.copyright{
+
+	text-align: center;
+	background-color: #000;
+	width: 100%;
+	height: 100%;
 }
 
 .icon{
@@ -590,11 +596,134 @@ p{
 		height: 1vh;
 		background-color: transparent;
 	}
+}  
+
+.loader-wrapper{
+	display: block;
+	position: fixed;
+	z-index: 1001;
+	background-color: #070E18;
+	top: 0; left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	opacity: 1;
+	animation: loaded 0.78s 1s forwards;
+	
 }
 
+@keyframes loaded {
+	0%{
+		opacity: 1;
+		z-index: 1000;
+		background-color: #070E18;
+	}
+	50%{
+		z-index: -1000;
+		opacity: 0;
+	  	background-color: #070E18;
+	}
+	100%{
+		z-index: -1000;
+		opacity: 0;
+	  	background-color: transparent;
+	}
+}
+
+  .loader-wrapper svg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  
+  .stroke-still {
+	stroke: #232323;
+  }
+  .stroke-still2 {
+	stroke: #fff;
+  }
+  
+  .stroke-animation {
+	
+			animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+	
+			animation-iteration-count: infinite;
+
+			animation-delay: 0;
+
+			animation-direction: normal;
+
+			animation-fill-mode: forwards;
+
+			animation-play-state: running;
+
+			transform-origin: center center;
+  }
+  
+  @keyframes stroke-spacing {
+	0% {
+	  stroke-dasharray: 0 200;
+	}
+	45% {
+	  stroke-dashoffset: 0;
+	  stroke-dasharray: 200 200;
+	}
+	90% {
+	  stroke-dashoffset: -200;
+	  stroke-dasharray: 200 200;
+	}
+	100% {
+	  stroke-dashoffset: -200;
+	  stroke-dasharray: 200 200;
+	}
+  }
+  
+  @keyframes stroke-spacing {
+	0% {
+	  stroke-dasharray: 0 200;
+	}
+	45% {
+	  stroke-dashoffset: 0;
+	  stroke-dasharray: 200 200;
+	}
+	90% {
+	  stroke-dashoffset: -200;
+	  stroke-dasharray: 200 200;
+	}
+	100% {
+	  stroke-dashoffset: -200;
+	  stroke-dasharray: 200 200;
+	}
+  }
+  
+  @keyframes stroke-color {
+	0%  { stroke: #3498DB; }
+	24% { stroke: #643232; }
+	25% { stroke: #327864; }
+	49% { stroke: #327864; }
+	50% { stroke: #32326e; }
+	74% { stroke: #32326e; }
+	75% { stroke: #78325a; }
+	99% { stroke: #78325a; }
+  }
+  
+  @keyframes stroke-color {
+	0%  { stroke: #3498DB; }
+	24% { stroke: #643232; }
+	25% { stroke: #327864; }
+	49% { stroke: #327864; }
+	50% { stroke: #32326e; }
+	74% { stroke: #32326e; }
+	75% { stroke: #78325a; }
+	99% { stroke: #78325a; }
+  }
+
+ 
 
 
-@media(max-width:600px) {
+@media(max-width:700px) {
 	
 	*{
 		margin: 0 auto;
@@ -634,43 +763,75 @@ p{
 	
 	.navi-bar{
 		position: fixed;
+		top:0;
+		right: 0;
 		background: #070E18;
-		height: 12vmin;
-		width: 100%;
+		height: 100%;
+		width: 70%;
 		display: flex;
+		flex-direction: column;
 		z-index: 4;
+		transition: transform 0.5s;
+		transform:translateX(100%);
 	}
 	
-	
-	
-	.navi{
-		width: 100%;
-		height: 12vmin;
-		position: relative;
+	.navi-bar[data-visible="true"]{
+		transition: transform 0.5s;
+		transform:translateX(0%);
+
+	}
+
+	.navi-button::before{
+		content: "";
+		position: absolute;
+		left:0.8vw;
+		top:2.5vh;
+		right: 0.8vw;
+		bottom:2.5vh;
+		background-color:#070E18;
+		opacity: 1;
+		z-index: -1;
+	}
+
+	.navi-button{
+		position: fixed;
 		display: block;
-		width: fit-content;
-		margin-right: 1vmin;
-		margin-top:auto;
-		margin-bottom:auto;
 		float:right;
+		flex-shrink: 0;
+		padding-right: 2vw;
+		height: 10%;
+		width: 10%;
+		transition: right 0.5s;
+		right:0%;
+		background-color: transparent;
+		border-style: none;
+		z-index: 5;
+	}
+
+	.navi-button[data-visible="true"]{
+		transition: all 0.5s;
+		right: 70%;
+
+	}
+	.navi{
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
 	}
 	
 	.navi ul{
-		position: relative;
+		height: 100%;
 		display: flex;
-		list-style: none;
-		margin: 0;
+		flex-direction: column;
+		margin: 0 auto;
 		padding: 0;
+		list-style: none;
 	}
 	
 	
 	
 	.navi ul li{
-		position: relative;
-		display: block;
-		margin-left: 0vmin;
-		margin-right:0vmin;
-		padding: 1vmin;
+		margin: 0 auto;
 		justify-content: center;
 	}
 	
@@ -679,6 +840,7 @@ p{
 		z-index: -1;
 		width: 10vmin;
 		height: 10vmin;
+		font-size: 1.3rem;
 	}
 	
 	.navi ul li a:link{
@@ -698,21 +860,19 @@ p{
 	}
 	
 	.navi ul li a:hover::before{
-		animation: turn-on 4.0s forwards;
+		animation: turn-on 2.0s forwards;
 	}
 	
 	.navi ul li a:hover{
-		transition: color 2s linear 1s;
+		transition: color 0.5s linear 0.5s;
 		color:#3DA5D9;
 	}
 	
 	.navi ul button{
-		height: 7vmin;
-		width: 20vmin;
+		width: 100%;
 		background-color: #3DA5D9;
 		border-color: #3DA5D9;
-		padding-left: 2vmin;
-		font-size: 3vmin;
+		font-size: 1.4rem;
 		border-width: 0.35vmin;
 		font-weight: 300;
 		color:black;
@@ -728,16 +888,20 @@ p{
 		transition: all 2s linear;
 	}
 	
+	.navi ul button:active{
+
+		border-style: inset;
+
+	}
 	
 	.logo{
 		position: relative;
 		display: block;
-		margin-left: 1vmin;
+		margin:	0 auto;
 		padding-bottom:1vmin;
-		width: 15vmin;
-		height: 15vmin;
-	}
-	
+		width: 50%;
+		height: auto;
+		}
 	
 	
 	.header-text h1::before, header h1::after{
@@ -803,6 +967,7 @@ p{
 		height: fit-content;
 		color: #fff;
 		font-size: 6vmin;
+		text-align: center;
 		
 	}
 	.sec04{
@@ -818,17 +983,19 @@ p{
 	.sec04 p {
 		font-size: 3.5vmin;
 		text-align: left;
-		
+		text-align: center;
 	
 	}
 	.sec05{
-	   
+	    margin: 0 auto;
 		width: 100%;
-		padding-top: 3vmin;
+		padding-top: 5vmin;
+		padding-left: 10vmin ;
 	
 		
 	}
 	.sec05 img{
+		
 		height: 45vmin;
 	}
 	.sec06{
@@ -933,6 +1100,12 @@ p{
 		z-index: 2;
 	}
 	
+	.nosso-time{
+		padding-top: 15vmin;
+		text-align: center;
+		color: #fff;
+		background-color: #070E18;
+	}
 	
 	.grid-item:hover{
 		transition: all 3s;
@@ -943,15 +1116,14 @@ p{
 	
 	
 	.container2{
-	
+
 		width: 90%;
 		height: 60vmin;
-		
+		display: block;
 	
 	}
 	
 	.scroll2{
-		
 		display: flex;
 		width: 100%;
 		height: 60vmin;
@@ -966,7 +1138,7 @@ p{
 	
 		text-align: center;
 		background-color: white;
-		width: 50vmin;
+		width: 45vmin;
 		flex-shrink: 0;
 		margin: 1vmin;
 		border-radius:  5vmin 0 5vmin 0;
@@ -984,16 +1156,26 @@ p{
 	
 	}
 	
-	.bkg-team{
+	.bkg-team::before{
+	
+		content: "";
 		width: 100%;
-		height: 20vmin;
-		background-color: tomato;
-		border-radius : 5vmin 0 5vmin 0;
-		
+		height: 100%;
+		position: relative;
+		background-image: url("/img/team/globo-network2.png");
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
+	
+	.bkg-team{
+		position: relative;
+		width: 100%;
+		height: 20vh;
+		border-radius : 4vmin 0 5vmin 0;
+	}	
 	.avatar {
 		
-		margin-top:  10vmin;
+		margin-top:  23vmin;
 		width: 20vmin;
 		height: 20vmin;
 		border-radius: 50%;
@@ -1014,70 +1196,46 @@ p{
 		margin: 0 auto;
 	
 	}
-	
 	.footer::before{
 		content:"";
 		position: absolute;
-		top: -2vmin;right: 0;bottom: 0;left: 0;
+		top: 0;right: 0;bottom: 0;left: 0;
 		background-repeat: no-repeat;
 		background-size:cover;
-		background-image: url("../img/header.jpg");
-		transform:rotate(180deg);
-	
-	
+		background-color: #03080e;
 	}
+	
 	
 	.footer{
 		position: relative;
-		height: 70vmin;
+		height: 40vmin;
 		display: flex;
-	}
-	
-	
-	.footer-box::before{
-		background-image: url("../img/cartao.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		content: "";
-		top:0;left: -22vmin;right: -10vmin;bottom: -5vmin;
-		position: absolute;
-		margin-left: 20vmin;
+		flex-flow: column;
 	}
 	
 	.footer-box{
 		position: relative;
 		display: flex;
-		width: 58vmin;
-		height: 42vmin;
+		width: 100%;
+		height:100%;
 	}
 	
 	.contato{
 		position: relative;
-		margin:0 auto;
-		margin-right: -14vmin;
-		padding: 5vmin;
-		padding-top:24vmin;
 		display: flex;
 		flex-flow: column;
-		width: 70%;
+		width: 100%;
 		height:10vmin;
-	
+		margin-left: auto;
+		margin-top:auto;
+		margin-bottom:auto;
 	}
 	
-	.homem{
-		position: relative;
-		height: 35vmin;
-		width: auto;
-		z-index: 2;
-		flex-shrink: 1;
+	.logo-footer{
+		margin: 0;
+		width:auto;
+		height: 40vmin;
 	
-	}
-	
-	.email{
-	
-		margin-top: 8vmin;
-		margin-left: -1vmin;
-		color:black;
 	}
 	
 	.contato ul{
@@ -1090,8 +1248,15 @@ p{
 	
 	.contato ul li{
 		
-		margin-left: 2vmin
+		margin-left: 2vmin;
 	
+	}
+	.copyright{
+	
+		text-align: center;
+		background-color: #000;
+		width: 100%;
+		height: 100%;
 	}
 	
 	.icon{
@@ -1129,7 +1294,7 @@ p{
 		font-size: 4vmin;
 	}
 	.h4{
-		font-size: 3vmin;
+		font-size: 4vmin;
 	}
 	.h5{
 		font-size: 2vmin;
@@ -1178,8 +1343,6 @@ p{
 			background-color: transparent;
 		}
 	}
-	
-	
 	
 
 }
