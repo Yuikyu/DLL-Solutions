@@ -11,14 +11,17 @@ html{
 }
 
 .container{
-	position:absolute;
 	width:100%;
 	height: 100%;
-	background: linear-gradient(#3DA5D9, #115376);
 	z-index: -2;
 	justify-content: center;
+	display:block;
+	animation: loadcontainer 7s forwards;
 }
-
+@keyframes loadcontainer{
+	0%{display:none;}
+	100%{display:block;}
+}
 .header{
 	position: relative;
 	display: block;
@@ -131,6 +134,7 @@ html{
 	font-weight: 300;
 	color:black;
 	border-radius: 2vh;
+	cursor: pointer;
 	
 }
 
@@ -510,6 +514,7 @@ html{
 	background-color: #000;
 	width: 100%;
 	height: 100%;
+	z-index: 9999;
 }
 
 .icon{
@@ -799,8 +804,9 @@ p{
 		float:right;
 		flex-shrink: 0;
 		padding-right: 2vw;
-		height: 10%;
+		height: auto;
 		width: 10%;
+		max-width: 3rem;
 		transition: right 0.5s;
 		right:0%;
 		background-color: transparent;
@@ -1257,6 +1263,8 @@ p{
 		background-color: #000;
 		width: 100%;
 		height: 100%;
+		z-index: 9999;
+		
 	}
 	
 	.icon{
