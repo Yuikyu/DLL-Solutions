@@ -482,8 +482,8 @@ html{
 	flex-flow: column;
 	width: 25%;
 	height:10vh;
-	margin: 0;
-	margin-right: 25vw;
+	margin:0;
+	margin-right: 12.5%;
 	margin-top:auto;
 	margin-bottom:auto;
 }
