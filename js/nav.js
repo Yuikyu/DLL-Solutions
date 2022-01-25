@@ -1,18 +1,19 @@
 const pnav = document.querySelector('.navi-bar');
 const tnav = document.querySelector('.navi-button');
 
-
-tnav.addEventListener("click", function () {
+    document.addEventListener("click", function (event) {
         const visibility = pnav.getAttribute('data-visible');
-        if (visibility === "false"){
-
-            pnav.setAttribute('data-visible', "true");
-            tnav.setAttribute('data-visible', "true");
+        if (visibility === "true"){
+            
+            if (pnav !== event.target && !pnav.contains(event.target) || tnav == event.target || tnav.contains(event.target)) {    
+                pnav.setAttribute('data-visible', "false");
+                tnav.setAttribute('data-visible', "false");
+              }
         }
         else{
-
-            pnav.setAttribute('data-visible', "false");
-            tnav.setAttribute('data-visible', "false");
+            if (tnav == event.target || tnav.contains(event.target)) {    
+            pnav.setAttribute('data-visible', "true");
+            tnav.setAttribute('data-visible', "true");
+          }
         }
-
     });
